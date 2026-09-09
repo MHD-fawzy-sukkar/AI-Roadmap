@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fawzy Sukkar — AI Engineer Roadmap</title>
+  
+  <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?v=2">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-badge">AI</span>
+        <span class="brand-name">Fawzy Sukkar</span>
+      </div>
+      
+      <div class="nav-actions">
+        <button id="lang-btn" class="btn btn-secondary">
+          <span class="btn-icon">🌐</span> English
+        </button>
+        <button class="btn btn-primary" onclick="window.print()">
+          <span class="btn-icon">🖨️</span> <span id="pdf-btn-text">حفظ كـ PDF / طباعة</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <!-- Hero Header -->
+    <section class="hero-section">
+      <h1 id="hero-title" class="hero-title">مسار مهندس الذكاء الاصطناعي (0 - 12)</h1>
+      <p id="hero-subtitle" class="hero-subtitle">دليل منهجي تطبيقي للانتقال من الأساسيات إلى بناء ونشر أنظمة الـ AI و RAG والوكلاء الأذكياء</p>
+      
+      <div class="roadmap-preview-card">
+        <img src="./assets/images/roadmap.png" onerror="this.src='./roadmap.png'" alt="AI Roadmap Diagram" class="roadmap-img">
+      </div>
+    </section>
+
+    <!-- Quick Navigation Bar -->
+    <nav class="stages-nav" aria-label="Stages navigation">
+      <div class="pills-wrapper" id="pills-container"></div>
+    </nav>
+
+    <!-- Vertical Stages List -->
+    <section class="roadmap-stages-container" id="stages-container"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Fawzy Sukkar © 2026 — AI Engineering Roadmap</p>
+  </footer>
+
+  <!-- Scripts with Relative Paths -->
+  <script src="./js/content.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
