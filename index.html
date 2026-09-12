@@ -19,12 +19,26 @@
         <span class="brand-name">Fawzy Sukkar</span>
       </div>
       
+      <!-- Prominent Track Switcher -->
+      <div class="track-switch-wrapper">
+        <span class="track-label" id="track-label">اختر المسار:</span>
+        <div class="track-switch" id="track-switch">
+          <button class="track-btn active" id="btn-track-ibm" onclick="switchTrack('ibm')">
+            <span class="track-icon">⚡</span> IBM AI Certificate
+          </button>
+          <button class="track-btn" id="btn-track-andrew" onclick="switchTrack('andrew')">
+            <span class="track-icon">🧠</span> DeepLearning.AI
+          </button>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
       <div class="nav-actions">
-        <button id="lang-btn" class="btn btn-secondary">
+        <button id="lang-btn" class="btn btn-secondary" onclick="toggleLanguage()">
           <span class="btn-icon">🌐</span> English
         </button>
         <button class="btn btn-primary" onclick="window.print()">
-          <span class="btn-icon">🖨️</span> <span id="pdf-btn-text">حفظ كـ PDF / طباعة</span>
+          <span class="btn-icon">📄</span> <span id="pdf-btn-text">تصدير PDF</span>
         </button>
       </div>
     </div>
@@ -33,11 +47,13 @@
   <main class="main-wrapper">
     <!-- Hero Header -->
     <section class="hero-section">
-      <h1 id="hero-title" class="hero-title">مسار مهندس الذكاء الاصطناعي (0 - 12)</h1>
-      <p id="hero-subtitle" class="hero-subtitle">دليل منهجي تطبيقي للانتقال من الأساسيات إلى بناء ونشر أنظمة الـ AI و RAG والوكلاء الأذكياء</p>
+      <div class="badge-pill" id="hero-badge">AI Engineering Curriculum</div>
+      <h1 id="hero-title" class="hero-title"></h1>
+      <p id="hero-subtitle" class="hero-subtitle"></p>
       
-      <div class="roadmap-preview-card">
-        <img src="./assets/images/roadmap.png" onerror="this.src='./roadmap.png'" alt="AI Roadmap Diagram" class="roadmap-img">
+      <!-- Dynamic Roadmap Visual Card -->
+      <div class="roadmap-preview-card" id="roadmap-banner">
+        <img id="roadmap-img" src="./assets/images/IBM_Roadmap.png" onerror="this.src='./IBM_Roadmap.png'" alt="AI Roadmap Diagram" class="roadmap-img">
       </div>
     </section>
 
@@ -46,15 +62,15 @@
       <div class="pills-wrapper" id="pills-container"></div>
     </nav>
 
-    <!-- Vertical Stages List -->
+    <!-- Vertical Stages Container -->
     <section class="roadmap-stages-container" id="stages-container"></section>
   </main>
 
   <footer class="footer">
-    <p>Fawzy Sukkar © 2026 — AI Engineering Roadmap</p>
+    <p>Mohammed Fawzy Sukkar © 2026 — AI Engineering Roadmap</p>
   </footer>
 
-  <!-- Scripts with Relative Paths -->
+  <!-- Scripts -->
   <script src="./js/content.js" defer></script>
   <script src="./js/main.js" defer></script>
 </body>
