@@ -381,6 +381,7 @@ window.roadmapsData = {
           id: "step-0",
           title: "0. Python for Data Science",
           badge: "المرحلة التأسيسية",
+          duration: "متطلب أساسي",
           items: [
             { label: "المصدر والرابط", text: "Kaggle Learn (<a href='https://www.kaggle.com/learn/python' target='_blank'>Python</a> | <a href='https://www.kaggle.com/learn/pandas' target='_blank'>Pandas</a> | <a href='https://www.kaggle.com/learn/data-visualization' target='_blank'>Visualization</a> | <a href='https://www.kaggle.com/learn/data-cleaning' target='_blank'>Cleaning</a>) وتوثيق NumPy." },
             { label: "الأداة الرئيسية", text: "Python, NumPy, Pandas, Matplotlib, Seaborn, Jupyter, Google Colab." },
@@ -392,6 +393,7 @@ window.roadmapsData = {
           id: "step-1",
           title: "1. Machine Learning Specialization",
           badge: "DeepLearning.AI / Andrew Ng",
+          duration: "90 Hours",
           items: [
             { label: "المصدر الأساسي والرابط", text: "Machine Learning Specialization — DeepLearning.AI: <a href='https://www.coursera.org/specializations/machine-learning-introduction' target='_blank'>https://www.coursera.org/specializations/machine-learning-introduction</a>" },
             { label: "الأداة الرئيسية", text: "Scikit-learn, Python, NumPy." },
@@ -403,6 +405,7 @@ window.roadmapsData = {
           id: "step-2",
           title: "2. Mathematics for Machine Learning and Data Science",
           badge: "مسار موازٍ عند الحاجة",
+          duration: "70 Hours",
           items: [
             { label: "المصدر الأساسي والرابط", text: "Mathematics for Machine Learning and Data Science Specialization: <a href='https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science' target='_blank'>https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science</a>" },
             { label: "الأداة الرئيسية", text: "NumPy, SciPy, Matplotlib." },
@@ -414,6 +417,7 @@ window.roadmapsData = {
           id: "step-3",
           title: "3. Deep Learning Specialization",
           badge: "DeepLearning.AI / Andrew Ng",
+          duration: "135 Hours",
           items: [
             { label: "المصدر الأساسي والرابط", text: "Deep Learning Specialization — DeepLearning.AI: <a href='https://www.coursera.org/specializations/deep-learning' target='_blank'>https://www.coursera.org/specializations/deep-learning</a>" },
             { label: "الأداة الرئيسية", text: "TensorFlow, Keras, Python." },
@@ -425,6 +429,7 @@ window.roadmapsData = {
           id: "step-4",
           title: "4. Deep Learning Frameworks (TensorFlow & PyTorch)",
           badge: "أطر العمل التطبيقية",
+          duration: "45 Hours",
           items: [
             { label: "المصادر والروابط", text: "<br>• Official TensorFlow Tutorials: <a href='https://www.tensorflow.org/tutorials' target='_blank'>https://www.tensorflow.org/tutorials</a><br>• Official PyTorch Tutorials: <a href='https://docs.pytorch.org/tutorials/beginner/basics/intro.html' target='_blank'>https://docs.pytorch.org/tutorials/beginner/basics/intro.html</a>" },
             { label: "الأداة الرئيسية", text: "PyTorch & TensorFlow / Keras." },
@@ -436,6 +441,7 @@ window.roadmapsData = {
           id: "step-5",
           title: "5. Natural Language Processing Specialization",
           badge: "DeepLearning.AI / Younes Bensouda",
+          duration: "80 Hours",
           items: [
             { label: "المصدر الأساسي والرابط", text: "Natural Language Processing Specialization: <a href='https://www.coursera.org/specializations/natural-language-processing' target='_blank'>https://www.coursera.org/specializations/natural-language-processing</a>" },
             { label: "الأداة الرئيسية", text: "NLTK, SpaCy, Trax, TensorFlow." },
@@ -447,6 +453,7 @@ window.roadmapsData = {
           id: "step-6",
           title: "6. Transformers & Hugging Face",
           badge: "المحولات الحديثة",
+          duration: "35 Hours",
           items: [
             { label: "المصدر الأساسي والرابط", text: "Hugging Face Course (مجاني ورسمي): <a href='https://huggingface.co/learn/nlp-course/chapter1/1' target='_blank'>https://huggingface.co/learn/nlp-course/chapter1/1</a>" },
             { label: "الأداة الرئيسية", text: "Hugging Face (transformers, datasets, tokenizers, accelerate, Hub)." },
@@ -458,6 +465,7 @@ window.roadmapsData = {
           id: "step-7",
           title: "7. Fine-tuning & Parameter-Efficient Adaptation (PEFT)",
           badge: "التكييف الفعال",
+          duration: "25 Hours",
           items: [
             { label: "المصادر والروابط", text: "<br>• Hugging Face PEFT Documentation: <a href='https://huggingface.co/docs/peft/' target='_blank'>https://huggingface.co/docs/peft/</a><br>• LoRA Reference Guide: <a href='https://huggingface.co/docs/peft/package_reference/lora' target='_blank'>https://huggingface.co/docs/peft/package_reference/lora</a>" },
             { label: "الأداة الرئيسية", text: "PEFT, LoRA, QLoRA, bitsandbytes, SFTTrainer." },
@@ -469,6 +477,7 @@ window.roadmapsData = {
           id: "step-8",
           title: "8. Large Language Models (LLMs) & Engineering",
           badge: "هندسة النماذج اللغوية",
+          duration: "30 Hours",
           items: [
             { label: "المصادر والروابط", text: "التوثيقات الرسمية للنماذج المفتوحة (Llama, Mistral) والواجهات السحابية التجارية." },
             { label: "الأداة الرئيسية", text: "OpenAI APIs, Ollama, vLLM, LiteLLM." },
@@ -480,6 +489,7 @@ window.roadmapsData = {
           id: "step-9",
           title: "9. Retrieval-Augmented Generation (RAG)",
           badge: "التوليد المعزز بالاسترجاع",
+          duration: "35 Hours",
           items: [
             { label: "المصادر والروابط", text: "قواعد البيانات الشعاعية ومكتبات الربط الدلالي." },
             { label: "الأداة الرئيسية", text: "FAISS, ChromaDB, Qdrant, LangChain, LlamaIndex." },
@@ -491,6 +501,7 @@ window.roadmapsData = {
           id: "step-10",
           title: "10. AI Engineering & Production Deployment",
           badge: "النشر والإنتاج",
+          duration: "40 Hours",
           items: [
             { label: "المصادر والروابط", text: "<br>• Official FastAPI Tutorial: <a href='https://fastapi.tiangolo.com/tutorial/' target='_blank'>https://fastapi.tiangolo.com/tutorial/</a><br>• Official Docker Documentation: <a href='https://docs.docker.com/get-started/' target='_blank'>https://docs.docker.com/get-started/</a>" },
             { label: "الأداة الرئيسية", text: "FastAPI, Pydantic, Docker, Docker Compose, Uvicorn." },
@@ -502,6 +513,7 @@ window.roadmapsData = {
           id: "step-11",
           title: "11. Autonomous AI Agents",
           badge: "الأنظمة الذاتية",
+          duration: "35 Hours",
           items: [
             { label: "المصادر والروابط", text: "إطار LangChain وتوثيقات بناء الوكلاء الرسمية." },
             { label: "الأداة الرئيسية", text: "LangChain, LangGraph, Tools / Function Calling APIs." },
@@ -513,6 +525,7 @@ window.roadmapsData = {
           id: "step-12",
           title: "12. Practical Projects & Portfolio",
           badge: "معرض الأعمال والتخرج",
+          duration: "60+ Hours",
           items: [
             { label: "المصادر والروابط", text: "منصتا GitHub و Kaggle." },
             { label: "الأداة الرئيسية", text: "Git, GitHub, Full Production AI Stack." },
@@ -534,6 +547,7 @@ window.roadmapsData = {
           id: "step-0",
           title: "0. Python for Data Science",
           badge: "Foundations",
+          duration: "Prerequisite",
           items: [
             { label: "Source & Links", text: "Kaggle Learn (<a href='https://www.kaggle.com/learn/python' target='_blank'>Python</a> | <a href='https://www.kaggle.com/learn/pandas' target='_blank'>Pandas</a> | <a href='https://www.kaggle.com/learn/data-visualization' target='_blank'>Visualization</a> | <a href='https://www.kaggle.com/learn/data-cleaning' target='_blank'>Cleaning</a>) & NumPy Docs." },
             { label: "Main Tool", text: "Python, NumPy, Pandas, Matplotlib, Seaborn, Jupyter, Google Colab." },
@@ -545,6 +559,7 @@ window.roadmapsData = {
           id: "step-1",
           title: "1. Machine Learning Specialization",
           badge: "DeepLearning.AI / Andrew Ng",
+          duration: "90 Hours",
           items: [
             { label: "Main Course & Link", text: "Machine Learning Specialization — DeepLearning.AI: <a href='https://www.coursera.org/specializations/machine-learning-introduction' target='_blank'>https://www.coursera.org/specializations/machine-learning-introduction</a>" },
             { label: "Main Tool", text: "Scikit-learn, Python, NumPy." },
@@ -556,6 +571,7 @@ window.roadmapsData = {
           id: "step-2",
           title: "2. Mathematics for Machine Learning and Data Science",
           badge: "Parallel Reference",
+          duration: "70 Hours",
           items: [
             { label: "Main Resource & Link", text: "Mathematics for Machine Learning and Data Science Specialization: <a href='https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science' target='_blank'>https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science</a>" },
             { label: "Main Tool", text: "NumPy, SciPy, Matplotlib." },
@@ -567,6 +583,7 @@ window.roadmapsData = {
           id: "step-3",
           title: "3. Deep Learning Specialization",
           badge: "DeepLearning.AI / Andrew Ng",
+          duration: "135 Hours",
           items: [
             { label: "Main Course & Link", text: "Deep Learning Specialization — DeepLearning.AI: <a href='https://www.coursera.org/specializations/deep-learning' target='_blank'>https://www.coursera.org/specializations/deep-learning</a>" },
             { label: "Main Tool", text: "TensorFlow, Keras, Python." },
@@ -578,6 +595,7 @@ window.roadmapsData = {
           id: "step-4",
           title: "4. Deep Learning Frameworks (TensorFlow & PyTorch)",
           badge: "Applied Frameworks",
+          duration: "45 Hours",
           items: [
             { label: "Main Resources & Links", text: "<br>• Official TensorFlow Tutorials: <a href='https://www.tensorflow.org/tutorials' target='_blank'>https://www.tensorflow.org/tutorials</a><br>• Official PyTorch Tutorials: <a href='https://docs.pytorch.org/tutorials/beginner/basics/intro.html' target='_blank'>https://docs.pytorch.org/tutorials/beginner/basics/intro.html</a>" },
             { label: "Main Tool", text: "PyTorch & TensorFlow / Keras." },
@@ -589,6 +607,7 @@ window.roadmapsData = {
           id: "step-5",
           title: "5. Natural Language Processing Specialization",
           badge: "DeepLearning.AI / Younes Bensouda",
+          duration: "80 Hours",
           items: [
             { label: "Main Course & Link", text: "Natural Language Processing Specialization: <a href='https://www.coursera.org/specializations/natural-language-processing' target='_blank'>https://www.coursera.org/specializations/natural-language-processing</a>" },
             { label: "Main Tool", text: "NLTK, SpaCy, Trax, TensorFlow." },
@@ -600,6 +619,7 @@ window.roadmapsData = {
           id: "step-6",
           title: "6. Transformers & Hugging Face",
           badge: "Transformers",
+          duration: "35 Hours",
           items: [
             { label: "Main Resource & Link", text: "Hugging Face NLP Course (Free & Official): <a href='https://huggingface.co/learn/nlp-course/chapter1/1' target='_blank'>https://huggingface.co/learn/nlp-course/chapter1/1</a>" },
             { label: "Main Tool", text: "Hugging Face (transformers, datasets, tokenizers, accelerate, Hub)." },
@@ -611,6 +631,7 @@ window.roadmapsData = {
           id: "step-7",
           title: "7. Fine-tuning & Parameter-Efficient Adaptation (PEFT)",
           badge: "Efficient Tuning",
+          duration: "25 Hours",
           items: [
             { label: "Main Resources & Links", text: "<br>• Hugging Face PEFT Documentation: <a href='https://huggingface.co/docs/peft/' target='_blank'>https://huggingface.co/docs/peft/</a><br>• LoRA Reference Guide: <a href='https://huggingface.co/docs/peft/package_reference/lora' target='_blank'>https://huggingface.co/docs/peft/package_reference/lora</a>" },
             { label: "Main Tool", text: "PEFT, LoRA, QLoRA, bitsandbytes, SFTTrainer." },
@@ -622,6 +643,7 @@ window.roadmapsData = {
           id: "step-8",
           title: "8. Large Language Models (LLMs) & Engineering",
           badge: "LLM Engineering",
+          duration: "30 Hours",
           items: [
             { label: "Main Resources & Links", text: "Official documentation for open-source models (Llama, Mistral, Gemma) and cloud LLM APIs." },
             { label: "Main Tool", text: "OpenAI APIs, Ollama, vLLM, LiteLLM." },
@@ -633,6 +655,7 @@ window.roadmapsData = {
           id: "step-9",
           title: "9. Retrieval-Augmented Generation (RAG)",
           badge: "Context Retrieval",
+          duration: "35 Hours",
           items: [
             { label: "Main Technologies & Links", text: "Vector databases and semantic retrieval frameworks." },
             { label: "Main Tool", text: "FAISS, ChromaDB, Qdrant, LangChain, LlamaIndex." },
@@ -644,6 +667,7 @@ window.roadmapsData = {
           id: "step-10",
           title: "10. AI Engineering & Production Deployment",
           badge: "Production & APIs",
+          duration: "40 Hours",
           items: [
             { label: "Main Resources & Links", text: "<br>• FastAPI Tutorial: <a href='https://fastapi.tiangolo.com/tutorial/' target='_blank'>https://fastapi.tiangolo.com/tutorial/</a><br>• Docker Docs: <a href='https://docs.docker.com/get-started/' target='_blank'>https://docs.docker.com/get-started/</a>" },
             { label: "Main Tool", text: "FastAPI, Pydantic, Docker, Docker Compose, Uvicorn." },
@@ -655,6 +679,7 @@ window.roadmapsData = {
           id: "step-11",
           title: "11. Autonomous AI Agents",
           badge: "Autonomous Systems",
+          duration: "35 Hours",
           items: [
             { label: "Main Resources & Links", text: "LangChain framework and official agent orchestration documentation." },
             { label: "Main Tool", text: "LangChain, LangGraph, Tools / Function Calling APIs." },
@@ -666,6 +691,7 @@ window.roadmapsData = {
           id: "step-12",
           title: "12. Practical Projects & Portfolio",
           badge: "Portfolio & Thesis",
+          duration: "60+ Hours",
           items: [
             { label: "Main Resources & Links", text: "GitHub and Kaggle platforms." },
             { label: "Main Tool", text: "Git, GitHub, Full Production AI Stack." },
