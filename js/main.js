@@ -1,5 +1,5 @@
 let currentLanguage = 'ar';
-let currentTrack = 'ibm'; // IBM is now the default track
+let currentTrack = 'ibm'; // IBM is default
 
 function renderApp() {
   if (!window.roadmapsData) return;
@@ -8,7 +8,7 @@ function renderApp() {
   const data = trackData[currentLanguage];
   const isAr = currentLanguage === 'ar';
 
-  // Update Document Direction & Language
+  // Update HTML attributes
   document.documentElement.setAttribute('lang', currentLanguage);
   document.documentElement.setAttribute('dir', isAr ? 'rtl' : 'ltr');
 
@@ -20,7 +20,7 @@ function renderApp() {
   document.getElementById('track-label').innerText = data.trackLabel || (isAr ? "اختر المسار:" : "Select Track:");
   document.getElementById('lang-btn').innerHTML = `<span class="btn-icon">🌐</span> ${isAr ? 'English' : 'عربي'}`;
 
-  // Roadmap Visual Banner (Displayed for both tracks)
+  // Roadmap Visual Banner
   const bannerBox = document.getElementById('roadmap-banner');
   const bannerImg = document.getElementById('roadmap-img');
   if (data.bannerImg && data.bannerImg.trim() !== "") {
@@ -30,7 +30,7 @@ function renderApp() {
     bannerBox.style.display = 'none';
   }
 
-  // Track Selector Toggle Active Class
+  // Track Selector Toggle
   document.getElementById('btn-track-andrew').classList.toggle('active', currentTrack === 'andrew');
   document.getElementById('btn-track-ibm').classList.toggle('active', currentTrack === 'ibm');
 
@@ -42,7 +42,6 @@ function renderApp() {
     pill.className = 'pill-item';
     pill.href = `#${stage.id}`;
     
-    // Extract short name
     const shortTitle = stage.title.split('.')[0] + '.' + (stage.title.split('.')[1]?.slice(0, 16) || '');
     pill.innerText = shortTitle;
     
@@ -71,9 +70,68 @@ function renderApp() {
       itemsHtml += `<li><strong>${item.label}:</strong> ${item.text}</li>`;
     });
 
-    // Only render duration badge if duration exists (IBM track only)
     const durationBadge = stage.duration ? `<span class="stage-duration">⏱️ ${stage.duration}</span>` : '';
 
+    // Project Accordion Box Generation
+    let projectHtml = '';
+    if (stage.project) {
+      const p = stage.project;
+      const btnLabel = data.projectBtnText || "المشاريع والتطبيقات المرحلية";
+      const noteLabel = data.projectNote || "تنبيه: وقت تنفيذ هذه المشاريع مستقل تماماً وليس ضمن الساعات المحددة للكورس.";
+      const taskLabel = isAr ? "المطلوب والتاسك" : "Task & Requirements";
+      const sourceLabel = isAr ? "مصدر البيانات والتحدي" : "Dataset & Challenge Source";
+      const deliverLabel = isAr ? "المطلوب تسليمه" : "Expected Deliverable";
+
+      projectHtml = `
+        <div class="project-accordion-wrapper">
+          <button class="project-toggle-btn" onclick="toggleProjectAccordion(this)">
+            <span class="btn-title-group">
+              <span>📁</span>
+              <span>${btnLabel}</span>
+            </span>
+            <span class="toggle-arrow">▼</span>
+          </button>
+          
+          <div class="project-content-panel">
+            <div class="project-note">
+              <span>⚠️</span>
+              <span>${noteLabel}</span>
+            </div>
+            
+            <div class="project-main-tag">
+              <span>📌</span>
+              <span>${p.title}</span>
+            </div>
+
+            <div class="project-grid">
+              <div class="project-card-item">
+                <div class="project-item-header">
+                  <span class="icon">🎯</span>
+                  <span>${taskLabel}</span>
+                </div>
+                <div class="project-item-body">${p.task}</div>
+              </div>
+
+              <div class="project-card-item">
+                <div class="project-item-header">
+                  <span class="icon">📊</span>
+                  <span>${sourceLabel}</span>
+                </div>
+                <div class="project-item-body">${p.source}</div>
+              </div>
+
+              <div class="project-card-item">
+                <div class="project-item-header">
+                  <span class="icon">📦</span>
+                  <span>${deliverLabel}</span>
+                </div>
+                <div class="project-item-body">${p.deliverable}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
     card.innerHTML = `
       <div class="stage-header">
         <h2 class="stage-title">${stage.title}</h2>
@@ -84,12 +142,13 @@ function renderApp() {
       </div>
       <div class="stage-content">
         <ul>${itemsHtml}</ul>
+        ${projectHtml}
       </div>
     `;
 
     stagesContainer.appendChild(card);
 
-    // Insert Full Specialization Banner Link immediately after Step 0 (for IBM track)
+    // Insert Specialization Link for IBM track after Step 0
     if (currentTrack === 'ibm' && index === 0 && data.specialization) {
       const specCard = document.createElement('div');
       specCard.className = 'specialization-banner-card';
@@ -102,6 +161,12 @@ function renderApp() {
   });
 }
 
+function toggleProjectAccordion(btn) {
+  btn.classList.toggle('active');
+  const panel = btn.nextElementSibling;
+  panel.classList.toggle('open');
+}
+
 function switchTrack(trackName) {
   currentTrack = trackName;
   renderApp();
@@ -112,7 +177,7 @@ function toggleLanguage() {
   renderApp();
 }
 
-// Initial setup
+// Initial Run
 document.addEventListener('DOMContentLoaded', () => {
   renderApp();
 });
