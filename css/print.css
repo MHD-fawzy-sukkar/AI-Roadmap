@@ -1,0 +1,81 @@
+/* ==========================================
+   Print / PDF Export Optimization Stylesheet
+   ========================================== */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  .navbar, 
+  .stages-nav, 
+  .btn, 
+  .footer, 
+  .track-switch-wrapper, 
+  .badge-pill, 
+  .project-toggle-btn,
+  .search-container,
+  .progress-card,
+  .completion-checkbox-wrapper {
+    display: none !important;
+  }
+
+  .main-wrapper {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .stage-card, 
+  .specialization-banner-card {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin-bottom: 16px;
+  }
+
+  .stage-title, 
+  .spec-title, 
+  .project-main-tag {
+    color: #0f172a !important;
+  }
+
+  .stage-content li, 
+  .project-item-body {
+    color: #222222 !important;
+  }
+
+  .stage-content strong, 
+  .project-item-body strong {
+    color: #000000 !important;
+  }
+
+  .stage-content a, 
+  .spec-link, 
+  .project-item-body a {
+    color: #000000 !important;
+    text-decoration: underline;
+  }
+
+  .project-content-panel {
+    max-height: none !important;
+    opacity: 1 !important;
+    padding: 10px 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .project-card-item {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  .project-note {
+    color: #000000 !important;
+    border: 1px solid #cbd5e1 !important;
+    background: #f1f5f9 !important;
+  }
+}

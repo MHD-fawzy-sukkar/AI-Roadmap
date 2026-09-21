@@ -1,0 +1,60 @@
+/* ==========================================
+   Design Tokens & CSS Variables System
+   ========================================== */
+:root {
+  /* Color Palette - Dark Theme System */
+  --bg-dark-base: #020617;
+  --bg-dark-surface: #0b1120;
+  --bg-card: #151f32;
+  --bg-card-hover: #1c2a44;
+  --bg-card-active: #223554;
+  --bg-panel: #090f1d;
+  
+  /* Accent Colors */
+  --primary-accent: #38bdf8;
+  --primary-accent-hover: #7dd3fc;
+  --primary-accent-rgb: 56, 189, 248;
+  --primary-gradient: linear-gradient(135deg, #0284c7, #2563eb);
+  
+  --secondary-accent: #6366f1;
+  --secondary-accent-light: #a5b4fc;
+  
+  --success-color: #10b981;
+  --success-bg: rgba(16, 185, 129, 0.15);
+  --success-border: rgba(16, 185, 129, 0.35);
+
+  --warning-color: #fbbf24;
+  --warning-bg: rgba(245, 158, 11, 0.12);
+  --warning-border: rgba(245, 158, 11, 0.3);
+
+  /* Text Colors */
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --text-inverse: #020617;
+
+  /* Borders & Glassmorphism */
+  --border-color: #24344d;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(11, 17, 32, 0.85);
+  --glass-border: rgba(56, 189, 248, 0.2);
+
+  /* Typography */
+  --font-family: 'IBM Plex Sans Arabic', 'Cairo', system-ui, -apple-system, sans-serif;
+  --font-size-sm: 9.5pt;
+  --font-size-base: 11.5pt;
+  --font-size-lg: 13pt;
+  --font-size-xl: 15pt;
+  --font-size-hero: 22pt;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.2);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}

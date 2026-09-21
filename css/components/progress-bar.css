@@ -1,0 +1,51 @@
+/* ==========================================
+   Progress Bar Widget Styling
+   ========================================== */
+.progress-card {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10.5pt;
+  font-weight: 700;
+}
+
+.progress-title {
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress-stats {
+  color: var(--primary-accent);
+}
+
+.progress-track-bg {
+  width: 100%;
+  height: 10px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.progress-track-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0284c7, #38bdf8, #10b981);
+  border-radius: 10px;
+  width: 0%;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}

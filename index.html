@@ -4,29 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fawzy Sukkar — AI Engineer Roadmap</title>
-  
+
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Comprehensive AI Engineering Roadmap featuring IBM AI Engineering Certificate and DeepLearning.AI curricula with hands-on projects.">
+  <meta name="author" content="Fawzy Sukkar">
+
+  <!-- Favicon & Stylesheet -->
   <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2">
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?v=2">
-  <link rel="stylesheet" href="./css/style.css?v=3">
+  <link rel="stylesheet" href="./css/style.css?v=4">
 </head>
 <body>
 
-  <!-- Top Navbar -->
-  <header class="navbar">
+  <!-- Sticky Top Navbar -->
+  <header class="navbar" role="banner">
     <div class="nav-container">
-      <div class="brand">
+      <a href="#" class="brand" aria-label="Home">
         <span class="brand-badge">AI</span>
         <span class="brand-name">Fawzy Sukkar</span>
-      </div>
+      </a>
       
-      <!-- Prominent Track Switcher -->
+      <!-- Track Switcher -->
       <div class="track-switch-wrapper">
         <span class="track-label" id="track-label">اختر المسار:</span>
-        <div class="track-switch" id="track-switch">
-          <button class="track-btn active" id="btn-track-ibm" onclick="switchTrack('ibm')">
+        <div class="track-switch" id="track-switch" role="tablist">
+          <button class="track-btn active" id="btn-track-ibm" role="tab" aria-selected="true">
             <span class="track-icon">⚡</span> IBM AI Certificate
           </button>
-          <button class="track-btn" id="btn-track-andrew" onclick="switchTrack('andrew')">
+          <button class="track-btn" id="btn-track-andrew" role="tab" aria-selected="false">
             <span class="track-icon">🧠</span> DeepLearning.AI
           </button>
         </div>
@@ -34,19 +39,19 @@
 
       <!-- Action Buttons -->
       <div class="nav-actions">
-        <button id="lang-btn" class="btn btn-secondary" onclick="toggleLanguage()">
+        <button id="lang-btn" class="btn btn-secondary" aria-label="Toggle Language">
           <span class="btn-icon">🌐</span> English
         </button>
-        <button class="btn btn-primary" onclick="window.print()">
+        <button id="print-btn" class="btn btn-primary" aria-label="Export PDF">
           <span class="btn-icon">📄</span> <span id="pdf-btn-text">تصدير PDF</span>
         </button>
       </div>
     </div>
   </header>
 
-  <main class="main-wrapper">
+  <main class="main-wrapper" role="main">
     <!-- Hero Header -->
-    <section class="hero-section">
+    <section class="hero-section" aria-labelledby="hero-title">
       <div class="badge-pill" id="hero-badge">AI Engineering Curriculum</div>
       <h1 id="hero-title" class="hero-title"></h1>
       <p id="hero-subtitle" class="hero-subtitle"></p>
@@ -57,21 +62,26 @@
       </div>
     </section>
 
+    <!-- Interactive Progress Tracker Container -->
+    <section id="progress-container" aria-label="Progress Tracker"></section>
+
+    <!-- Real-time Search & Filter Container -->
+    <section id="search-container" aria-label="Search Roadmap"></section>
+
     <!-- Quick Navigation Bar -->
     <nav class="stages-nav" aria-label="Stages navigation">
       <div class="pills-wrapper" id="pills-container"></div>
     </nav>
 
     <!-- Vertical Stages Container -->
-    <section class="roadmap-stages-container" id="stages-container"></section>
+    <section class="roadmap-stages-container" id="stages-container" aria-live="polite"></section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <p>Fawzy Sukkar © 2026 — AI Engineering Roadmap</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="./js/content.js?v=3" defer></script>
-  <script src="./js/main.js?v=3" defer></script>
+  <!-- Application JS Entry (ES Module) -->
+  <script type="module" src="./js/app.js?v=4"></script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+/* ==========================================
+   Header & Navbar Styling
+   ========================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 0;
+}
+
+.nav-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-badge {
+  background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+  color: var(--text-inverse);
+  font-weight: 800;
+  font-size: 10pt;
+  padding: 3px 9px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+.brand-name {
+  font-size: 13pt;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Track Switcher Toggle */
+.track-switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(15, 23, 42, 0.85);
+  padding: 4px 6px 4px 12px;
+  border-radius: 30px;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glow);
+}
+
+html[dir="ltr"] .track-switch-wrapper {
+  padding: 4px 12px 4px 6px;
+}
+
+.track-label {
+  font-size: 10pt;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.track-switch {
+  display: flex;
+  gap: 4px;
+}
+
+.track-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 6px 15px;
+  font-size: 10pt;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  transition: var(--transition-normal);
+}
+
+.track-btn:hover {
+  color: #ffffff;
+}
+
+.track-btn.active {
+  background: var(--primary-gradient);
+  color: #ffffff;
+  box-shadow: 0 2px 12px rgba(2, 132, 199, 0.4);
+}
+
+/* Action Buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  padding: 7px 16px;
+  font-size: 10pt;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: var(--transition-normal);
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(2, 132, 199, 0.25);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--primary-accent);
+}
