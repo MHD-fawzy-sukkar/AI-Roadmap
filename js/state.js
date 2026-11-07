@@ -4,7 +4,7 @@ import { roadmapsData } from './data/index.js';
 class StateStore {
   constructor() {
     this.state = {
-      currentTrack: 'ibm', // 'ibm' | 'andrew'
+      currentTrack: 'andrew', // 'ibm' | 'andrew'
       currentLanguage: 'ar', // 'ar' | 'en'
       searchQuery: '',
       completedStages: getCompletedStages()
